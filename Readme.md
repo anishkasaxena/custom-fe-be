@@ -1,0 +1,3 @@
+The two-tier application architecture, built on AWS, uses a Virtual Private Cloud (VPC) with a public and a private subnet. The frontend, hosted in the public subnet, is accessible via the internet and managed by a Load Balancer that distributes traffic efficiently. The backend, hosted in the private subnet, handles data processing and is not directly accessible from the internet, ensuring security. Frontend and backend communicate through secure API calls. DNS translates our domain name to the Load Balancer's IP address, providing users with seamless access. This setup ensures scalability, security, and high performance for our application.
+
+
