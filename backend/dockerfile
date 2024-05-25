@@ -1,0 +1,11 @@
+FROM python:latest
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir Flask Flask-Cors requests 
+
+COPY . .
+
+EXPOSE 5000
+
+CMD ["python", "app.py"]
